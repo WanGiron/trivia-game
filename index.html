@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Trivia game</title>
+  </head>
+
+  <body>
+    <div id="wrongMessage" class="messages"><h3>Nope! Try again!</h3></div>
+
+    <div id="newGame" class="messages">
+      <h3>Get to know Alyssa a little better!!!</h3>
+      <button onclick="startQuestion1()" class="option2">START</button>
+    </div>
+
+    <div id="fruitMessage" class="messages">
+      <h3>
+        Bananas are the favorite fruit of Alyssa! FUN FACT: she calls
+        them "caca"
+      </h3>
+      <button onclick="startQuestion2()" class="option2">NEXT</button>
+    </div>
+
+    <div id="itemMessage" class="messages">
+      <h3>Alyssa loves Daddy's wallet!!! Although the last time she played with it, a few cards were missing... Oh well...</h3>
+      <button onclick="startQuestion3()" class="option2">NEXT</button>
+    </div>
+
+    <div id="songMessage" class="messages">
+      <h3>
+        Baby Shark doo doo doo is a hit among babies including Alyssa!!! 
+      </h3>
+      <button onclick="playAgain()" class="option2">PLAY AGAIN</button>
+      <button id="scoreHere" class="option2">Score:</button>
+    </div>
+
+    <div class="trivia">
+      <section class="question">
+        <h2 id="timer">15</h2>
+
+        <div id="mainQuestion">
+          <H1>What is Alyssa's your favorite fruit?</H1>
+        </div>
+      </section>
+
+      <section class="answer">
+        <ul>
+          <li><button id="firstOption" class="option1"></button></li>
+          <li><button id="secondOption" class="option1"></button></li>
+          <li><button id="thirdOption" class="option1"></button></li>
+          <li><button id="fourthOption" class="option1"></button></li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="assets/script/main.js">
+     
+    </script>
+  </body>
+</html>
